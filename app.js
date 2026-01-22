@@ -1,4 +1,4 @@
-const DATA_INDEX_URL = "../data/index.json";
+const DATA_INDEX_URL = "./data/index.json";
 
 const CODE_HASH = "3b612c75a7b5048a435fb6ec81e52ff92d6d795a8b5a9c17070f6a63c97a53b2"; // SHA-256("Admin123")
 
@@ -51,7 +51,7 @@ async function loadIndex() {
 }
 
 async function loadCase(casoId) {
-  const res = await fetch(`../data/casos/${casoId}.json`, { cache: "no-store" });
+  const res = await fetch(`./data/casos/${casoId}.json`, { cache: "no-store" });
   if (!res.ok) throw new Error("No se pudo cargar el caso");
   return await res.json();
 }
