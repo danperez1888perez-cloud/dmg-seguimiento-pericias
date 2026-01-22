@@ -1,0 +1,19 @@
+{
+  "caso": "DMG-012",
+  "tipo": "Connotación",
+  "fecha_hecho": "2026-01-15",
+  "estado_general": "En proceso",
+  "pericias": [
+    {
+      "id": "PER-001",
+      "tipo_pericia": "Inspección ocular técnica",
+      "seccion": "ESCENA IOT",
+      "estado": "En proceso",
+      "fecha_disposicion": "2026-01-15",
+      "ultima_actualizacion": "2026-01-17",
+      "avance": "Coordinación de salida",
+      "responsable": "Tnte. González",
+      "observaciones": "Pendiente movilización"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+.topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #e5e5e5}
+.brand .title{font-weight:800}
+.brand .subtitle{font-size:12px;opacity:.75}
+.searchbox input{padding:10px 12px;min-width:260px;border:1px solid #ddd;border-radius:10px}
+.container{padding:16px}
+.toolbar{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.toolbar select,.toolbar button{padding:10px 12px;border:1px solid #ddd;border-radius:10px;background:#fff;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{border:1px solid #e5e5e5;border-radius:14px;padding:12px;cursor:pointer;background:#fff}
+.card:hover{border-color:#cfcfcf}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;border:1px solid #e5e5e5}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.meta{font-size:12px;opacity:.8;margin-top:8px}
+.view.hidden{display:none}
+.linkbtn{border:none;background:none;color:#0645ad;cursor:pointer;padding:0;margin:0 0 12px 0}
+.tablewrap{overflow:auto;border:1px solid #e5e5e5;border-radius:14px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #efefef;vertical-align:top}
+.table th{font-size:12px;text-transform:uppercase;opacity:.65}
+.hint{margin-top:10px;font-size:12px;opacity:.75}
+.exportBox{position:fixed;bottom:16px;right:16px;z-index:9999}
+.btn{padding:10px 12px;border:1px solid #ddd;border-radius:10px;background:#fff;cursor:pointer}
+.btnPrimary{padding:10px 12px;border:1px solid #111;border-radius:10px;background:#111;color:#fff;cursor:pointer}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:9998;display:flex;align-items:flex-start;justify-content:center}
+.modalCard{margin-top:12vh;background:#fff;width:360px;max-width:92vw;padding:16px;border-radius:14px}
+.modalTitle{font-weight:800;margin-bottom:8px}
+.modalText{margin-bottom:10px}
+.modalCard input{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:10px}
+.modalActions{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+.error{margin-top:10px;color:#b00020;font-size:13px}
+.hidden{display:none}

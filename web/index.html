@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DMG – Seguimiento de Pericias</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">DMG – Seguimiento de Pericias</div>
+      <div class="subtitle">Operaciones / Casos de connotación</div>
+    </div>
+    <div class="searchbox">
+      <input id="q" placeholder="Buscar caso (ej: DMG-012)..." />
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="view-home" class="view">
+      <div class="toolbar">
+        <select id="filterEstado">
+          <option value="">Todos</option>
+          <option value="No iniciada">No iniciada</option>
+          <option value="En proceso">En proceso</option>
+          <option value="Realizada">Realizada</option>
+        </select>
+        <button id="refresh">Actualizar</button>
+      </div>
+
+      <div id="cases" class="grid"></div>
+    </section>
+
+    <section id="view-case" class="view hidden">
+      <button id="back" class="linkbtn">← Volver</button>
+      <div id="caseHeader"></div>
+
+      <div class="tablewrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Pericia</th>
+              <th>Sección</th>
+              <th>Estado</th>
+              <th>F. Disposición</th>
+              <th>Últ. Actualización</th>
+              <th>Avance</th>
+              <th>Responsable</th>
+              <th>Obs.</th>
+            </tr>
+          </thead>
+          <tbody id="periciasBody"></tbody>
+        </table>
+      </div>
+
+      <div class="hint">
+        Secretarios actualizan por formularios (GitHub Issues). La web se refresca sola al hacer commit.
+      </div>
+    </section>
+  </main>
+
+  <div id="exportBox" class="exportBox hidden">
+    <button id="btnExportXlsx" class="btnPrimary">Descargar XLSX (Matriz Oficial)</button>
+  </div>
+
+  <div id="authModal" class="modal hidden">
+    <div class="modalCard">
+      <div class="modalTitle">Acceso restringido – Operaciones</div>
+      <div class="modalText">Ingrese código de autorización:</div>
+      <input id="codeInput" type="password" placeholder="Código" />
+      <div class="modalActions">
+        <button id="btnCancel" class="btn">Cancelar</button>
+        <button id="btnOk" class="btnPrimary">Aceptar</button>
+      </div>
+      <div id="msg" class="error hidden">Código inválido</div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
